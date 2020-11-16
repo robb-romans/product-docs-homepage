@@ -10,7 +10,7 @@
                 {{- partial "components/navbar_nav.html" .Children . -}}
           </div>
         {{- else -}}
-        <a href="{{ .URL | relURL }}" class="nav-link">{{ .Name }}</a>
+        <a href="{{ .URL | absURL }}" class="nav-link">{{ .Name }}</a>
         {{- end -}}
     </li>
     {{- end -}}

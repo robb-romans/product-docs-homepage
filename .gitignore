@@ -2,8 +2,7 @@
 *.DS_Store
 node_modules/
 .env
-output
-resources
+resources/
 
 # Don't add personal VS Code settings
 .vscode/
@@ -14,9 +13,8 @@ hugo/public/
 dist/
 .tmp/
 resources/_gen
-static/assets/
 
 # Don't add files that are created in the build process
-# Local Netlify folder
 .netlify
 Gemfile.lock
+static/assets

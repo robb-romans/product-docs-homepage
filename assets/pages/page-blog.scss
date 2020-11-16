@@ -35,8 +35,7 @@
 }
 
 .section-blog-list {
-  flex: 0 0 70%;
-  padding: 0;
+  padding-top: 3rem;
   border-right: 1px solid #ebebeb;
 
   @media screen and (min-width: 800px) {
@@ -76,16 +75,17 @@ img[src$="cloudformation-launch-stack.png"] {
 }
 
 .header-headline-container {
-  background-image: url(/img/technical-blog-image.jpg);
+  background-image: url(/img/misc-banner.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   z-index: 1;
   padding: 90px 60px 90px 35px;
+  margin-top: -1px;
   h1 {
     font-family: "titillium-light",arial,sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     background: rgba(255,255,255,.55);
     display: inline-block;
     font-size: 35px;

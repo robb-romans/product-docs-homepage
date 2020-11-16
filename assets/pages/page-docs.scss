@@ -156,7 +156,7 @@ $sidebar-width: 100%;
   color: $color-brand;
   display: flex;
   flex-wrap: nowrap;
-  font-weight: 610;
+  font-weight: 600;
   justify-content: space-between;
   line-height: 1em;
   margin: 4rem 0 2rem;
@@ -224,11 +224,11 @@ $sidebar-width: 100%;
 
   .doc-date {
     color: $color-medium-dark;
-    font-weight: 610;
+    font-weight: 600;
   }
 
   .doc-category {
-    font-weight: 610;
+    font-weight: 600;
     margin-left: 0.5rem;
   }
 }
@@ -260,4 +260,3 @@ $sidebar-width: 100%;
     }
   }
 }
-

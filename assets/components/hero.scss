@@ -27,7 +27,7 @@
 
   .hero--title {
     font-size: 2rem;
-    font-weight: 610;
+    font-weight: 400;
     line-height: 1;
 
     @media screen and (min-width: 520px) {
@@ -37,7 +37,7 @@
 
   .hero--sub {
     font-size: 1rem;
-    font-weight: 510;
+    font-weight: 500;
     margin-top: 2rem;
     max-width: 460px;
     opacity: 0.8;
@@ -69,7 +69,7 @@
         font-size: 2.5rem;
         font-family: 'titillium-light', arial, sans-serif;
         font-style: normal;
-        font-weight: 610;
+        font-weight: 400;
         background: rgba(0, 0, 0, .4);
         color: #fff;
         display: block;
@@ -84,7 +84,7 @@
         min-width: 10em;
         font-family: 'titillium-regular', arial, sans-serif;
         font-style: normal;
-        font-weight: 510;
+        font-weight: 400;
         border-bottom: solid 2px #fff;
         margin: .5em auto;
         line-height: 1;
@@ -133,7 +133,7 @@
         letter-spacing: .04em;
         margin-top: 2em;
         font-style: normal;
-        font-weight: 510;
+        font-weight: 400;
       }
     }
   }

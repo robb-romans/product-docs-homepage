@@ -1,10 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans");
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-@import url("https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css");
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css");
+
 
 * {
   box-sizing: border-box;
@@ -20,15 +14,19 @@ html,
 body {
   -webkit-appearance: none;
   background: $color-white;
-  color: $color-dark;
+  color: $color-black;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
   word-break: break-word;
-  font-family: "Titillium Web", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: 'titillium-regular','open-sans-regular' ,arial,sans-serif;
+  font-size: 1rem;
   line-height: 1.5;
   font-style: normal;
+  font-weight: 500;
+  p {
+    color: $color-black;
+  }
 }
 
 html.docs,
@@ -89,33 +87,8 @@ img {
 }
 
 
-h2, h3, h4, h5, h6 {
-font-family: "Titillium Web", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.h4, .h5, .h6, h4, h5, h6 {
+  font-family: 'titillium-bold',arial,sans-serif;
   font-style: normal;
-  font-weight: 610;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-td, th {
-  white-space: inherit;
-  word-break: keep-all;
-}
-
-th {
-  background: #3498DB;
-  color: #fff;
-  border-right: 1px solid #fff !important;
-}
-td {
-  border: 1px solid #ddd !important;
-}
-
-.fig-img{
-  display: block;
-}
-.caption {
-  display: none;
+  font-weight: 400;
 }

@@ -58,7 +58,7 @@
   .post--meta-label {
     display: block;
     font-size: 0.6rem;
-    font-weight: 510;
+    font-weight: 500;
     letter-spacing: 0.1em;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -73,15 +73,17 @@
 
   .post--date {
     font-size: 1rem;
-    font-weight: 610;
+    font-weight: 600;
     line-height: normal;
   }
-
+  a[data-category="aws"], a[data-category="osad"], a[data-category="sdk"] {
+    letter-spacing: -1.5px;
+  }
   .post--category {
-    letter-spacing: 0.02em;
+    letter-spacing: 0;
 
     a {
-      font-weight: 610;
+      font-weight: 600;
     }
   }
 
@@ -95,7 +97,7 @@
   h1,
   h2,
   h3 {
-    font-weight: 610;
+    font-weight: 400;
     font-style: normal;
   }
 
@@ -110,7 +112,7 @@
   }
 
   strong {
-    font-weight: 610;
+    font-weight: 600;
   }
 
   p {
@@ -121,7 +123,7 @@
 
   a {
     cursor: pointer;
-    font-weight: 510;
+    font-weight: 500;
     text-decoration: none;
   }
 
@@ -130,11 +132,10 @@
   }
 
   span {
-    font-weight: 610;
+    font-weight: 600;
   }
 
   #single-post {
-    flex: 0 0 70%;
     border-right: 1px solid #ebebeb;
 
     ul {
@@ -143,26 +144,60 @@
 
       li {
         list-style: disc;
+        margin-left: 1.5rem;
+        list-style-type: disc !important;
       }
     }
 
     h3 {
       font-style: normal;
-      font-weight: 610;
+      font-weight: 400;
       font-size: 1.5rem;
       font-family: 'titillium-bold', arial, sans-serif;
     }
 
     h4 {
       font-style: normal;
-      font-weight: 600;
-      font-size: 1.3rem;
+      font-weight: 400;
+      font-size: 1rem;
       text-transform: uppercase;
       font-family: 'titillium-bold', arial, sans-serif;
     }
 
     @media screen and (min-width: 800px) {
       padding: 4rem 0 0 4rem;
+    }
+    p {
+      .image-right {
+        margin: 0 0 1em 1em;
+        float: right;
+        height: auto;
+        max-width: 50%;
+      }
+      .image-left {
+        margin: 0 0 1em 1em;
+        float: left;
+        height: auto;
+        max-width: 50%;
+      }
+      .image-center {
+        margin: 0 0 1em 1em;
+        height: auto;
+        max-width: 50%;
+      }
+      img {
+        margin: 0 0 1em 1em;
+        height: auto;
+        max-width: 100%;
+      }
+    }
+    ol {
+      list-style-type: decimal;
+      li {
+        margin-left: 10px;
+        list-style-type: decimal;
+        font-size: 1.25rem;
+      }
     }
   }
 
@@ -177,6 +212,9 @@
   a.cta.teal {
     background: #00bebc;
   }
+  a.cta.purple {
+    background: #95098a;
+}
 
   a.cta {
     border-radius: 1px;
@@ -215,7 +253,7 @@
       }
 
       &::after {
-        content: "RACKER";
+        content: " ";
         font-size: 12px;
         width: 100%;
       }
@@ -256,7 +294,6 @@
 
 .author--avatar {
   $avatar-size: 2.25rem;
-
   border-radius: calc($avatar-size / 2);
   height: $avatar-size;
   overflow: hidden;
@@ -273,7 +310,7 @@
 
 .author--name {
   font-size: 1rem;
-  font-weight: 610;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -282,13 +319,12 @@
   letter-spacing: 0.02em;
 
   a {
-    font-weight: 610;
+    font-weight: 600;
   }
 }
 
 .blog-post {
-  margin-bottom: 2rem;
-  max-width: 600px;
+  margin: 0 2rem 2rem 2rem;
   border-bottom: solid 1px #e6e6e6;
 
   .post-title {
@@ -298,7 +334,7 @@
     margin-top: 0;
     font-family: 'titillium-regular', arial, sans-serif;
     font-style: normal;
-    font-weight: 610;
+    font-weight: 400;
     font-size: 2rem;
   }
 
@@ -314,7 +350,7 @@
     .read-more {
       font-family: "open-sans-bold", arial, sans-serif;
       font-style: normal;
-      font-weight: 610;
+      font-weight: 400;
       font-size: 100%;
       text-transform: uppercase;
     }
@@ -326,6 +362,10 @@
     height: auto;
     display: block;
   }
+    li {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
 }
 
 .post-avatar {
@@ -344,7 +384,7 @@
 }
 
 .post-avatar::after {
-  content: 'RACKER';
+  content: '';
   font-size: 10px;
   width: 100%;
   background: rgba(235, 0, 0, .8);
@@ -366,14 +406,32 @@
   border-radius: 3px;
   font-family: 'source-code-regular', 'Monaco', 'Courier New', monospace;
   font-style: normal;
-  font-weight: 610;
+  font-weight: 400;
 
   pre {
     background-color: transparent !important;
     border: none;
     overflow-x: auto;
-    overflow-y: hidden;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding-bottom: .5em;
+    color: $color-white !important;
   }
+}
+
+.figure {
+  margin: 1rem 0;
+  img {
+    display: block;
+  }
+  span {
+    display: block;
+  }
+}
+
+.image-left {
+  margin: 0 0 1em 1em;
+  float: left;
+  height: auto;
+  max-width: 50%;
 }

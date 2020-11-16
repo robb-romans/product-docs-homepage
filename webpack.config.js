@@ -43,14 +43,5 @@ module.exports = {
     poll: 1000
   },
   plugins: [
-    new MiniCssExtractPlugin(),
-    new webpack.DefinePlugin({
-      // Provide enviroment variable defaults
-      // from .env
-      ALGOLIA_APP_ID: JSON.stringify(process.env.ALGOLIA_APP_ID),
-      ALGOLIA_ADMIN_KEY: JSON.stringify(process.env.ALGOLIA_ADMIN_KEY),
-      ALGOLIA_INDEX_NAME: JSON.stringify(process.env.ALGOLIA_INDEX_NAME),
-      ALGOLIA_INDEX_FILE: JSON.stringify(process.env.ALGOLIA_INDEX_FILE),
-      ALGOLIA_SEARCH_KEY: JSON.stringify(process.env.ALGOLIA_SEARCH_KEY),
-    })],
+    new MiniCssExtractPlugin()],
 };

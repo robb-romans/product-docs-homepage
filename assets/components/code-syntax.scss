@@ -11,22 +11,33 @@
 /* Inline code */
 code {
   border-radius: 2px;
-  color: #e83e8c;
+  color: #e0e0d7;
   padding: 0 .2em;
   font-family: 'source-code-regular', 'Monaco', 'Courier New', monospace;
   font-style: normal;
-  font-weight: 610;
+  font-weight: 400;
+  span {
+    color: #e0e0d7 !important;
+  }
+}
+p, li {
+  code {
+    border-radius: 2px;
+    color: #1f5b83;
+    padding: 0 .2em;
+    font-family: 'source-code-regular',Monaco,'Courier New',monospace;
+    font-style: normal;
+    font-weight: 400;
+}
 }
 
 #share-bar {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
   h4 {
     margin-bottom: 10px;
-    font-weight: 510;
+    font-weight: 500;
     text-transform: uppercase;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 2.5rem;
   }
   border-top: 1px solid #e6e6e6;
@@ -52,8 +63,4 @@ code {
 
 .fa {
   font-size: 1.5rem;
-}
-
-.cta-bar {
-  text-align: center;
 }
