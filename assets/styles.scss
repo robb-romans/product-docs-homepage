@@ -15,6 +15,7 @@
 @import "base/animations.scss";
 @import "base/print.scss";
 @import "base/fonts.scss";
+@import "base/fa.scss";
 
 /* Components */
 @import "components/button.scss";
@@ -41,3 +42,5 @@
 @import "pages/page-docs.scss";
 @import "pages/page-blog.scss";
 @import "pages/page-post.scss";
+@import "pages/dev-docs.scss";
+

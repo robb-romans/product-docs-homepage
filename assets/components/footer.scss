@@ -3,10 +3,11 @@
   color: $color-white;
   font-size: 0.8rem;
   letter-spacing: 0.025em;
-  padding: 4rem 0 0;
+  padding: 2rem 0 0;
   position: relative;
   z-index: 1;
   text-align: left;
+  margin-bottom: -2rem;
 
   /* Ensure intercom doesn't cover anything... */
   @media screen and (max-width: 48em) {
@@ -91,7 +92,7 @@
 }
 
 .lower-footer {
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   background-color: #000000;
 
   > .container {
@@ -107,4 +108,8 @@
   li {
     margin-left: 1rem;
   }
+}
+
+.upper-footer {
+  margin-left: 2rem;
 }

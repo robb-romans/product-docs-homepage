@@ -73,119 +73,128 @@ defaultMarkdownHandler = "goldmark"
     tabWidth = 4
   [markup.tableOfContents]
     endLevel = 3
-    ordered = false
+    ordered = true
     startLevel = 2
 
 [[menu.footer]]
-    name = "Developer Center"
-    parent = "Developer Network"
-    url = "https://docs.rackspace.com/"
-    weight = 1
-[[menu.footer]]
-    name = "API Documentation and User Guides"
-    parent = "Developer Network"
-    url = "/docs"
-    weight = 2
-[[menu.footer]]
-    name = "SDKs"
-    parent = "Developer Network"
-    url = "https://docs.rackspace.com/sdks/python/"
-    weight = 3
-[[menu.footer]]
-    name = "Rackspace How-To"
-    parent = "Developer Network"
-    url = "https://support.rackspace.com/how-to/"
-    weight = 4
-[[menu.footer]]
-    name = "Technical Blog"
-    parent = "Blogs"
-    url = "https://docs.rackspace.com/blog"
-    weight = 5
-[[menu.footer]]
-    name = "Rackspace Blog"
-    parent = "Blogs"
-    url = "https://www.rackspace.com/blog"
-    weight = 6
-[[menu.footer]]
-    name = "Solve: Thought Leadership"
-    parent = "Blogs"
-    url = "https://www.rackspace.com/solve"
-    weight = 7
-[[menu.footer]]
-    name = "Customer Stories"
-    parent = "Other Information"
-    url = "https://www.rackspace.com/customer-stories"
-    weight = 8
-[[menu.footer]]
-    name = "Events"
-    parent = "Other Information"
-    url = "https://www.rackspace.com/events"
-    weight = 9
-[[menu.footer]]
-    name = "Programs"
-    parent = "Other Information"
-    url = "https://www.rackspace.com/responsibility"
+    name = "Developer Network"
     weight = 10
+    [[menu.footer]]
+        name = "Developer Center"
+        parent = "Developer Network"
+        url = "https://docs.rackspace.com/"
+        weight = 100
+    [[menu.footer]]
+        name = "API Documentation and User Guides"
+        parent = "Developer Network"
+        url = "/docs"
+        weight = 200
+    [[menu.footer]]
+        name = "SDKs"
+        parent = "Developer Network"
+        url = "https://docs.rackspace.com/sdks/python/"
+        weight = 300
+    [[menu.footer]]
+        name = "Rackspace How-To"
+        parent = "Developer Network"
+        url = "https://support.rackspace.com/how-to/"
+        weight = 400
 [[menu.footer]]
-    name = "Careers"
-    parent = "Other Information"
-    url = "https://jobs.jobvite.com/rackspace/"
-    weight = 11
+    name = "Blogs"
+    weight = 20
+    [[menu.footer]]
+        name = "Technical Blog"
+        parent = "Blogs"
+        url = "https://docs.rackspace.com/blog"
+        weight = 100
+    [[menu.footer]]
+        name = "Rackspace Blog"
+        parent = "Blogs"
+        url = "https://www.rackspace.com/blog"
+        weight = 200
+    [[menu.footer]]
+        name = "Solve: Thought Leadership"
+        parent = "Blogs"
+        url = "https://www.rackspace.com/solve"
+        weight = 300
 [[menu.footer]]
-    name = "Style Guide for Technical Content"
-    parent = "Other Information"
-    url = "https://docs.rackspace.com/docs/style-guide/"
-    weight = 12
+    name = "Other Information"
+    weight = 30
+    [[menu.footer]]
+        name = "Customer Stories"
+        parent = "Other Information"
+        url = "https://www.rackspace.com/customer-stories"
+        weight = 100
+    [[menu.footer]]
+        name = "Events"
+        parent = "Other Information"
+        url = "https://www.rackspace.com/events"
+        weight = 200
+    [[menu.footer]]
+        name = "Programs"
+        parent = "Other Information"
+        url = "https://www.rackspace.com/responsibility"
+        weight = 300
+    [[menu.footer]]
+        name = "Careers"
+        parent = "Other Information"
+        url = "https://jobs.jobvite.com/rackspace/"
+        weight = 400
+    [[menu.footer]]
+        name = "Style Guide for Technical Content"
+        parent = "Other Information"
+        url = "https://docs.rackspace.com/docs/style-guide/"
+        weight = 500
 
 [[menu.main]]
     identifier = "developer_home"
     name = "Developer Home"
     url = "https://docs.rackspace.com/"
-    weight = 1
+    weight = 200
 [[menu.main]]
     identifier = "developer_documentation"
     name = "Developer Documentation"
     url = "/docs"
-    weight = 2
+    weight = 210
 [[menu.main]]
     identifier = "blogs"
     name = "Blogs"
     url = "#"
     post = ""
-    weight = 3
+    weight = 220
     [[menu.main]]
         identifier = "technical-blog"
         name ="Technical Blog"
         url ="https://docs.rackspace.com/blog"
-        weight = 1
+        weight = 300
         parent = "blogs"
     [[menu.main]]
         identifier = "rackspace-blog"
         name = "Rackspace Blog"
         url = "https://www.rackspace.com/blog"
-        weight = 2
+        weight = 310
         parent = "blogs"
     [[menu.main]]
         identifier = "solve"
         name = "Solve: Thought Leadership"
         url = "https://www.rackspace.com/solve"
-        weight = 3
+        weight = 320
         parent = "blogs"
 [[menu.main]]
     identifier = "support_documentation"
     name = "Support Documentation"
     url = "https://support.rackspace.com/"
-    weight = 4
+    weight = 230
 [[menu.buttons]]
     identifier = "buynow"
     name = "Buy Now"
     url = "#"
-    weight = 5
+    weight = 240
 [[menu.buttons]]
     identifier = "login"
     name = "Login"
     url = "#"
-    weight = 6
+    weight = 250
 
 
 [outputs]
